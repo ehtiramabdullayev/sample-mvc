@@ -4,16 +4,12 @@ import com.tngtech.archunit.core.domain.JavaClasses;
 import com.tngtech.archunit.core.importer.ClassFileImporter;
 import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.lang.ArchRule;
-import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;
 import org.junit.jupiter.api.Test;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.classes;
-import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
 import static com.tngtech.archunit.library.Architectures.layeredArchitecture;
-import static com.tngtech.archunit.library.GeneralCodingRules.ACCESS_STANDARD_STREAMS;
-import static com.tngtech.archunit.library.GeneralCodingRules.USE_JAVA_UTIL_LOGGING;
 
 @AnalyzeClasses(
         packages = "com.example.samplemvc"
@@ -31,6 +27,7 @@ public class ArchitectureTest {
                 .layer("Controllers").definedBy("..controller..")
                 .layer("Services").definedBy("..service..")
                 .layer("Repositories").definedBy("..repository..")
+                .whereLayer("Controllers").mayNotBeAccessedByAnyLayer()
                 .whereLayer("Services").mayOnlyBeAccessedByLayers("Controllers")
                 .whereLayer("Repositories").mayOnlyBeAccessedByLayers("Services")
                 .check(importedClasses);
