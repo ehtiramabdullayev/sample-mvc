@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="979de4e1-da8f-4d19-8b26-38e2737eda03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/samplemvc/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/samplemvc/model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/samplemvc/repository/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/samplemvc/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="979de4e1-da8f-4d19-8b26-38e2737eda03" name="Changes" comment="adding the functionality">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/samplemvc/ArchitectureTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/samplemvc/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/samplemvc/repository/StudentRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ehtiramabdullayev"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ehtiramabdullayev/sample-mvc.git",
+    "accountId": "cbb3e74c-35ee-461a-8673-1cb3d6de2297"
+  }
+}]]></component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
@@ -48,6 +57,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ArchitectureTest.executor": "Run",
+    "JUnit.ArchitectureTest.testLayeredArchitecture.executor": "Debug",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.SampleMvcApplication.executor": "Run",
     "git-widget-placeholder": "master",
@@ -62,7 +77,38 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ArchitectureTest">
+    <configuration name="ArchitectureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sample-mvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.samplemvc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.samplemvc" />
+      <option name="MAIN_CLASS_NAME" value="com.example.samplemvc.ArchitectureTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArchitectureTest.testLayeredArchitecture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sample-mvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.samplemvc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.samplemvc" />
+      <option name="MAIN_CLASS_NAME" value="com.example.samplemvc.ArchitectureTest" />
+      <option name="METHOD_NAME" value="testLayeredArchitecture" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SampleMvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="sample-mvc" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.samplemvc.SampleMvcApplication" />
@@ -70,6 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ArchitectureTest" />
+        <item itemvalue="JUnit.ArchitectureTest.testLayeredArchitecture" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -90,11 +142,75 @@
       <workItem from="1714401799625" duration="214000" />
       <workItem from="1714402037375" duration="142000" />
       <workItem from="1714402195809" duration="46000" />
-      <workItem from="1714423773665" duration="800000" />
+      <workItem from="1714423773665" duration="5350000" />
     </task>
+    <task id="LOCAL-00001" summary="adding the functionality">
+      <option name="closed" value="true" />
+      <created>1714424648828</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714424648828</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding the functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding the functionality" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/samplemvc/ArchitectureTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/samplemvc/ArchitectureTest.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/samplemvc/ArchitectureTest.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/samplemvc/ArchitectureTest.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/samplemvc/ArchitectureTest.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/samplemvc/ArchitectureTest.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/samplemvc/ArchitectureTest.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/samplemvc/ArchitectureTest.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/samplemvc/ArchitectureTest.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
